@@ -5,6 +5,9 @@ class Configure < Formula
   sha256 "901bec3333149686c2f052ec768acae5f5e32add23604a196cdac3bce222f4ca"
   license ""
 
+  depends_on "openssl"
+
+  
   def install
       bin.install "configure"   
   end
