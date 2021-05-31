@@ -1,4 +1,4 @@
-class Secrets2Env < Formula
+class Secrets2env < Formula
   desc "A tiny tool that converts AWS Secrets Manager API responses into environment variables."
   homepage "https://github.com/automattic/secrets2env"
   url "https://github.com/Automattic/secrets2env/releases/download/0.1.0/secrets2env-macos.zip"
