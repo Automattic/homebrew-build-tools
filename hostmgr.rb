@@ -5,7 +5,7 @@ class Hostmgr < Formula
   sha256 "b69bdbffc2c323b72fc41f25d62d282f9d6acb3e322e19ca3e4da0e6f08933cb"
   license ""
  
-  depends_on "openssl"
+  depends_on "libssh2"
   
   def install
       bin.install "hostmgr"   
