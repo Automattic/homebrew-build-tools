@@ -13,9 +13,9 @@ class Hostmgr < Formula
       puts Dir.pwd
     
       bin.install "hostmgr"
-      etc.install "hostmgr/homebrew.mxcl.hostmgr.sync.plist"
-      etc.install "hostmgr/homebrew.mxcl.hostmgr.git-mirror-sync.plist"
-      etc.install "hostmgr/homebrew.mxcl.hostmgr.git-mirror-server.plist"
+      mv "homebrew.mxcl.hostmgr.sync.plist", etc/"hostmgr/homebrew.mxcl.hostmgr.sync.plist"
+      mv "homebrew.mxcl.hostmgr.git-mirror-sync.plist", etc/"homebrew.mxcl.hostmgr.git-mirror-sync.plist"
+      mv "homebrew.mxcl.hostmgr.git-mirror-server.plist", etc/"homebrew.mxcl.hostmgr.git-mirror-server.plist"
   end
 
   test do
