@@ -7,10 +7,6 @@ class Hostmgr < Formula
  
   depends_on "libssh2"
   
-  def launch_agents_path
-    "/Users/#{ENV['USERNAME']}/Library/LaunchAgents"
-  end
-  
   def install
       bin.install "hostmgr"
       etc.install "homebrew.mxcl.hostmgr.sync.plist"
