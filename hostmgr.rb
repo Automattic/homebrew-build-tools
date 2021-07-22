@@ -8,6 +8,10 @@ class Hostmgr < Formula
   depends_on "libssh2"
   
   def install
+    
+      puts Dir.glob("*)
+      puts Dir.pwd
+    
       bin.install "hostmgr"
       etc.install "hostmgr/homebrew.mxcl.hostmgr.sync.plist"
       etc.install "hostmgr/homebrew.mxcl.hostmgr.git-mirror-sync.plist"
