@@ -9,6 +9,9 @@ class Hostmgr < Formula
   
   def install   
       bin.install "hostmgr"
+      mv "homebrew.mxcl.hostmgr.sync.plist", var/"hostmgr/homebrew.mxcl.hostmgr.sync.plist"
+      mv "homebrew.mxcl.hostmgr.git-mirror-sync.plist", var/"homebrew.mxcl.hostmgr.git-mirror-sync.plist"
+      mv "homebrew.mxcl.hostmgr.git-mirror-server.plist", var/"homebrew.mxcl.hostmgr.git-mirror-server.plist"
   end
 
   test do
