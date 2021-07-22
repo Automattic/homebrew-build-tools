@@ -8,7 +8,7 @@ class Hostmgr < Formula
   depends_on "libssh2"
   
   def launch_agents_path
-    File.expand_path "~/Library/LaunchAgents"
+    "/Users/#{ENV['USERNAME']}/Library/LaunchAgents"
   end
   
   def install
