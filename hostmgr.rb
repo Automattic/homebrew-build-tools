@@ -9,7 +9,7 @@ class Hostmgr < Formula
   
   def install
     
-      puts Dir.glob("*)
+      puts Dir.glob("*")
       puts Dir.pwd
     
       bin.install "hostmgr"
