@@ -7,11 +7,7 @@ class Hostmgr < Formula
  
   depends_on "libssh2"
   
-  def install
-    
-      puts Dir.glob("*")
-      puts Dir.pwd
-    
+  def install   
       bin.install "hostmgr"
   end
 
