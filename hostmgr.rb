@@ -16,7 +16,7 @@ class Hostmgr < Formula
   end
 
   def caveats
-    s = <<-EOS.undent
+    <<~EOS
       hostmgr is installed, but to run its services, you'll need to run:
       
       mv #{var}/hostmgr/*.plist ~/Library/LaunchAgents/
@@ -32,8 +32,6 @@ class Hostmgr < Formula
       launchctl start com.automattic.hostmgr.git-mirror-server.plist
       
     EOS
-    s += "Some issue only on older systems" if MacOS.version < :mountain_lion
-    s
   end
 
   test do
