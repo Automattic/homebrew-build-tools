@@ -12,7 +12,28 @@ class Hostmgr < Formula
 
       mv "com.automattic.hostmgr.sync.plist", var/"hostmgr/com.automattic.hostmgr.sync.plist"
       mv "com.automattic.hostmgr.git-mirror-sync.plist", var/"hostmgr/com.automattic.hostmgr.git-mirror-sync.plist"
-      mv "com.automattic.hostmgr.git-mirror-server.plist", var/"com.automattic.hostmgr.git-mirror-server.plist"
+      mv "com.automattic.hostmgr.git-mirror-server.plist", var/"hostmgr/com.automattic.hostmgr.git-mirror-server.plist"
+  end
+
+  def caveats
+    s = <<-EOS.undent
+      hostmgr is installed, but to run its services, you'll need to run:
+      
+      mv #{var}/hostmgr/*.plist ~/Library/LaunchAgents/
+      
+      to set up the launch agents. From there, they can be started using:
+      
+      launchctl load -w ~/Library/LaunchAgents/com.automattic.hostmgr.sync.plist
+      launchctl load -w ~/Library/LaunchAgents/com.automattic.hostmgr.git-mirror-sync.plist
+      launchctl load -w ~/Library/LaunchAgents/com.automattic.hostmgr.git-mirror-server.plist
+      
+      launchctl start com.automattic.hostmgr.sync.plist
+      launchctl start com.automattic.hostmgr.git-mirror-sync.plist
+      launchctl start com.automattic.hostmgr.git-mirror-server.plist
+      
+    EOS
+    s += "Some issue only on older systems" if MacOS.version < :mountain_lion
+    s
   end
 
   test do
