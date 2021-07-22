@@ -13,9 +13,9 @@ class Hostmgr < Formula
   
   def install
       bin.install "hostmgr"
-      prefix.install "homebrew.mxcl.hostmgr.sync.plist", File.join(launch_agents_path, "homebrew.mxcl.hostmgr.sync.plist")
-      prefix.install "homebrew.mxcl.hostmgr.git-mirror-sync.plist", File.join(launch_agents_path, "homebrew.mxcl.hostmgr.git-mirror-sync.plist")
-      prefix.install "homebrew.mxcl.hostmgr.git-mirror-server.plist", File.join(launch_agents_path, "homebrew.mxcl.hostmgr.git-mirror-server.plist")
+      etc.install "homebrew.mxcl.hostmgr.sync.plist"
+      etc.install "homebrew.mxcl.hostmgr.git-mirror-sync.plist"
+      etc.install "homebrew.mxcl.hostmgr.git-mirror-server.plist"
   end
  
   test do
