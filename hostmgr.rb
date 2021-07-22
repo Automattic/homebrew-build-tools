@@ -11,6 +11,7 @@ class Hostmgr < Formula
       bin.install "hostmgr"
 
       FileUtils.mkdir_p var/"hostmgr/"
+      FileUtils.mkdir_p etc/"hostmgr/"
 
       mv "com.automattic.hostmgr.sync.plist", var/"hostmgr/com.automattic.hostmgr.sync.plist"
       mv "com.automattic.hostmgr.git-mirror-sync.plist", var/"hostmgr/com.automattic.hostmgr.git-mirror-sync.plist"
