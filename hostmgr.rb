@@ -1,8 +1,8 @@
 class Hostmgr < Formula
   desc "A native binary for managing macOS CI VM hosts"
   homepage "https://github.com/automattic/homebrew-build-tools"
-  url "https://github.com/Automattic/hostmgr/releases/download/0.7.1/hostmgr.tar.gz"
-  sha256 "8f765f2bbbc18963781329f62a3ff880c5b0ded62c111e77d15b153298a5019f"
+  url "https://github.com/Automattic/hostmgr/releases/download/0.8.0/hostmgr.tar.gz"
+  sha256 "5ff652575670154ca5e6d28b6feaa9e37d14b493ccc6f21f36283ce1da2dff0e"
   license ""
  
   depends_on "libssh2"
