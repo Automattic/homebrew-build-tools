@@ -1,4 +1,4 @@
-class DrawText < Formula
+class Drawtext < Formula
   desc "A tiny tool for drawing raster text from HTML"
   homepage "https://github.com/automattic/drawText"
   url "https://github.com/Automattic/drawText/releases/download/0.1/drawText.tar.gz"
