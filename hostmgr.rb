@@ -12,9 +12,8 @@ class Hostmgr < Formula
   end
 
   on_big_sur do
-    lib.install "libswift_Concurrency.dylib"
+      lib.install "libswift_Concurrency.dylib"
   end
-
   
   test do
     system "#{bin}/hostmgr", "--version"
