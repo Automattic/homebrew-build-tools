@@ -1,8 +1,8 @@
 class Hostmgr < Formula
   desc "A native binary for managing macOS CI VM hosts"
   homepage "https://github.com/automattic/homebrew-build-tools"
-  url "https://github.com/Automattic/hostmgr/releases/download/0.15.10/hostmgr.tar.gz"
-  sha256 "7ef41cf34f6cbe664be68087c92c22d669d7f7464d1a570ea1bcd0c96f5ae4cc"
+  url "https://d2twmm2nzpx3bg.cloudfront.net/0.15.11/hostmgr-concurrency-test-1.zip"
+  sha256 "d29701cd9d80e1c217a6fa0a814d475847f68b740c7b0ad0283070301626cf56"
   license ""
  
   depends_on "libssh2"
@@ -11,6 +11,11 @@ class Hostmgr < Formula
       bin.install "hostmgr"
   end
 
+  on_bigsur do
+    lib.install "libswift_Concurrency.dylib"
+  end
+
+  
   test do
     system "#{bin}/hostmgr", "--version"
   end
