@@ -9,10 +9,10 @@ class Hostmgr < Formula
   
   def install   
       bin.install "hostmgr"
-  end
-
-  on_big_sur do
-      lib.install "libswift_Concurrency.dylib"
+    
+      on_big_sur do
+          lib.install "libswift_Concurrency.dylib"
+      end
   end
   
   test do
