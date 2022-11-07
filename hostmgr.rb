@@ -1,8 +1,8 @@
 class Hostmgr < Formula
   desc "A native binary for managing macOS CI VM hosts"
   homepage "https://github.com/automattic/homebrew-build-tools"
-  url "https://d2twmm2nzpx3bg.cloudfront.net/0.15.11/hostmgr-concurrency-test-1.zip"
-  sha256 "d29701cd9d80e1c217a6fa0a814d475847f68b740c7b0ad0283070301626cf56"
+  url "https://d2twmm2nzpx3bg.cloudfront.net/0.15.12/hostmgr.zip"
+  sha256 "a2a50b213e9af877792ec46f479526d82ff9fdd055673ab17f022269aeafe572"
   license ""
  
   depends_on "libssh2"
