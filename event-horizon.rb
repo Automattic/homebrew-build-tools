@@ -1,7 +1,7 @@
 class EventHorizon < Formula
   desc "A multi-language code generation tool for type-safe event tracking."
   homepage "https://github.com/Automattic/EventHorizon"
-  version "0.2.1"
+  version "0.2.2"
   license ""
 
   on_macos do
