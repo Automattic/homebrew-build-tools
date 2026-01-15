@@ -8,7 +8,7 @@ class EventHorizon < Formula
     on_arm do
       url "https://github.com/Automattic/EventHorizon/releases/download/0.2.3/event-horizon-cli-darwin-arm64",
         using: :nounzip
-      sha256 "e25c7f8885b5abebd19b77062fd8e6a34bdd690f9d97ce10eeb2bc40ef777782"
+      sha256 "29973f705463f5efcb3d690a0d37494281ab79671ef7f9ded31d825d345f5b84"
     end
   end
 
@@ -16,7 +16,7 @@ class EventHorizon < Formula
     on_intel do
       url "https://github.com/Automattic/EventHorizon/releases/download/0.2.3/event-horizon-cli-linux-amd64",
         using: :nounzip
-      sha256 "da2fa7dbfca8c70d0d75f6034af388d467218b68915286f42afd20d0c0d45117"
+      sha256 "29973f705463f5efcb3d690a0d37494281ab79671ef7f9ded31d825d345f5b84"
     end
   end
 
