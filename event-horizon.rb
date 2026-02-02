@@ -16,7 +16,7 @@ class EventHorizon < Formula
     on_intel do
       url "https://github.com/Automattic/EventHorizon/releases/download/0.2.3/event-horizon-cli-linux-amd64",
         using: :nounzip
-      sha256 "29973f705463f5efcb3d690a0d37494281ab79671ef7f9ded31d825d345f5b84"
+      sha256 "734e5eb1ba431868d3db233471130c9f9af1b774a8d694f18209defdf0e12ef6"
     end
   end
 
