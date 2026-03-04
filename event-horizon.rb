@@ -1,22 +1,22 @@
 class EventHorizon < Formula
   desc "A multi-language code generation tool for type-safe event tracking."
   homepage "https://github.com/Automattic/EventHorizon"
-  version "0.3.3"
+  version "0.3.4"
   license ""
 
   on_macos do
     on_arm do
-      url "https://github.com/Automattic/EventHorizon/releases/download/0.3.3/event-horizon-cli-darwin-arm64",
+      url "https://github.com/Automattic/EventHorizon/releases/download/0.3.4/event-horizon-cli-darwin-arm64",
         using: :nounzip
-      sha256 "ea8eb6cb28405ab2a46127cbbad6ba42e98c6f5fe97e53e2fc96798afc039434"
+      sha256 "320d098242d1a0a864a7e10c2bfc871ed3021cf8d897220c2a872599c6d0fcde"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Automattic/EventHorizon/releases/download/0.3.3/event-horizon-cli-linux-amd64",
+      url "https://github.com/Automattic/EventHorizon/releases/download/0.3.4/event-horizon-cli-linux-amd64",
         using: :nounzip
-      sha256 "6e0058eed3b8c32be38d8ef57fab836cbaa2765e0fa5e112ee0f92afd05f5570"
+      sha256 "ae982583013cc8df1e2c6890d2742543606ca253930c0d650e221d5ca91702a1"
     end
   end
 
