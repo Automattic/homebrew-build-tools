@@ -26,5 +26,4 @@ Once tapped, the formulae behave like any other Homebrew package — `brew upgra
 | `configure` | A lightweight native tool for working with configuration files |
 | `drawText` | A tiny tool for drawing raster text from HTML |
 | `event-horizon` | A multi-language code generation tool for type-safe event tracking |
-| `hostmgr` | A native binary for managing macOS CI VM hosts |
 | `secrets2env` | A tiny tool that converts AWS Secrets Manager API responses into environment variables |
